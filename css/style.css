@@ -1,0 +1,310 @@
+
+@font-face {
+  font-family: "LibreBaskerville_italic";
+  src: url("LibreBaskerville-Italic.ttf") format("TrueType");
+  font-style: italic;
+}
+
+/*@font-face {
+  font-family: "fontello";
+  src: url("fontello.ttf") format("TrueType");
+  font-style: italic;
+}*/
+
+/*@font-face {
+  font-family: 'fontello';
+  src: url("fontello/fontello.eot");
+  src: url("fontello/fontello.eot?#iefix") format('embedded-opentype'), url("fontello/fontello.woff") format('woff'), url("fontello/fontello.ttf") format('truetype'), url("fontello/fontello.svg#fontello") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /*font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;*/
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  font: 13px/16px sans-serif, "DINNextCYR-Light", Arial, Tahoma, sans-serif;
+  color: #fff;
+}
+ol,
+ul, li {
+  list-style: none;
+}
+* {
+  margin: 0;
+  outline: none;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a,
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+input {
+  -webkit-appearance: none;
+}
+/********************************************************/
+/*                      МИКСИНГИ                        */
+/********************************************************/
+/* не компиляться */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* Let's get this party started */
+/********************************************************/
+/*                    ОСНОВНЫЕ СТИЛИ                    */
+/********************************************************/
+
+
+body {
+  background: #d8d8d8;
+  overflow: visible;
+}
+a:hover {
+  color: #026353;
+}
+
+
+
+
+
+.body-wraper {
+    padding-left: 80px;
+}
+
+header {
+	background: rgba(30,30,31,0.85);
+	width: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  text-align: center;
+}
+
+.header__logo-img {
+  margin: 30px 0 70px 0;
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+
+.logo-top-right {
+  width: 80px;
+  display: block;
+  position: fixed;
+  right: 15px;
+  top: 20px;
+}
+
+.navbar {}
+
+.navbar__li-element {
+  width: 100%;
+  background: rgba(255,255,255,0.1);
+  margin-bottom: 2px;
+}
+
+.navbar__li-element:hover {
+  /*background: #9cbc68;*/
+  background: #83a24f;
+}
+.navbar__li-element:hover a {
+  color: #fff;
+}
+
+.navbar__href {
+  padding: 19px 0 13px 0;
+  display: block;
+  color: #f3f3f3;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.main-content {
+  /*width: 1170px;*/
+  padding-bottom: 70px;
+  margin: 0 auto;
+}
+
+
+.fullscreenbanner__wraper {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.fullscreenbanner__title-main {
+  margin-bottom: 0.6em;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.fullscreenbanner__title-second {
+  font-size: 3em;
+  font-style: italic;
+  font-family: 'LibreBaskerville_italic', serif;
+}
+
+
+.arrow a {
+    position: absolute;
+    visibility: visible;
+    z-index: 10000;
+    left: 50%;
+    font-size: 30px;
+    margin-left: -15px;
+    -webkit-animation: floating 2s infinite linear;
+    -moz-animation: floating 2s infinite linear;
+    -ms-animation: floating 2s infinite linear;
+    -o-animation: floating 2s infinite linear;
+    color: #FFF;
+
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+}
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+#profile-info {
+  background: rgba(30,30,31,0.85);
+  padding: 50px;
+}
+
+
+.section-title {
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.lead {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.3px;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+}
+
+.profile-info__img {
+  width: 100%;
+}

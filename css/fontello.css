@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('./../fonts/fontello/fontello.eot?19461327');
+  src: url('./../fonts/fontello/fontello.eot?19461327#iefix') format('embedded-opentype'),
+  url('./../fonts/fontello/fontello.woff?19461327') format('woff'),
+  url('./../fonts/fontello/fontello.ttf?19461327') format('truetype'),
+  url('./../fonts/fontello/fontello.svg?19461327#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.icon-arrow {
+	font-size: 24px;
+	line-height: 24px;
+	height: 50px;
+	display: block;
+	width: 50px;
+	position: absolute;
+	bottom: 25px;
+}
+
+.icon-arrow__href {
+	margin: 0;
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+
+	-webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+}
+
+.icon-down-open-big {
+
+	font-family: "fontello";
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	margin-right: .2em;
+	text-align: center;
+	/* opacity: .8; */
+
+	/* For safety - reset parent styles, that can break glyph codes*/
+	font-variant: normal;
+	text-transform: none;
+
+	/* fix buttons height, for twitter bootstrap */
+	line-height: 1em;
+
+	/* Animation center compensation - margins should be symmetric */
+	/* remove if not needed */
+	margin-left: .2em;
+
+	/* You can be more comfortable with increased icons size */
+	/* font-size: 120%; */
+
+	/* Font smoothing. That was taken from TWBS */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+.animate-spin {
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+  display: inline-block;
+}
+
+
+.animate-up-and-down {
+  -webkit-animation: upAndDown 2s infinite linear;
+	 -moz-animation: upAndDown 2s infinite linear;
+  	   -o-animation: upAndDown 2s infinite linear;
+  		  animation: upAndDown 2s infinite linear;
+  			display: inline-block;
+}
+
+
+
+@keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		   -moz-transform: rotate(0deg);
+			 -o-transform: rotate(0deg);
+				transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(359deg);
+		   -moz-transform: rotate(359deg);
+			 -o-transform: rotate(359deg);
+				transform: rotate(359deg);
+	}
+}
+
+
+
+
+
+@keyframes upAndDown {
+	0% {
+		top: 0;
+	}
+
+	50% {
+		top: 20px;
+	}
+
+	100% {
+		top: 0px;
+	}
+}
