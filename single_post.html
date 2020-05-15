@@ -11,7 +11,10 @@
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-	
+	<link rel="stylesheet" href="css/styles/monokai-sublime.css">
+	<script src="js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fontello.css">
 </head>
@@ -54,6 +57,8 @@
 									<p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo. Etiam porta sem malesuada magna mollis euismod. Praesent commodo cursus magna.</p>
 
 									<p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo. Etiam porta sem malesuada magna mollis euismod. Praesent commodo cursus magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo. Etiam porta sem malesuada magna mollis euismod. Praesent commodo cursus magna.</p>
+
+									<pre class="post-code"><code id="post_code-test"></code></pre>
 
 									<p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo. Etiam porta sem malesuada magna mollis euismod. Praesent commodo cursus magna.</p>
 
@@ -138,6 +143,19 @@
 
 	<script>
   		$.backstretch("images/bg1.jpg");
+
+ var code = `
+  var a = document.getElementsByClassName('hello')[0];
+
+  console.log("hello");
+
+  function a () { 
+    retrun b;
+  }
+
+`
+  		document.getElementById('post_code-test').innerHTML = code;
+
 	</script>
 
 	<script src="js/app.js"></script>

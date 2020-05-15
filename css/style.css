@@ -488,9 +488,14 @@ p {
   font-size: 1em;
 }
 
+.post-code {
+  margin-bottom: 15px;
+}
 
 
-
+.post-code code {
+  border: 1px solid #464646;
+}
 
 
 
