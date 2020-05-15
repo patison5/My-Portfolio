@@ -20,7 +20,7 @@
 
 	<div class="body-wraper">
 		<header class="header">
-			<img src="" alt="" class="header__logo-img">
+			<img src="images/logo.png" alt="images/logo.png" class="header__logo-img">
 
 			<nav class="navbar">
 				<li class="navbar__li-element"><a href="#" class="navbar__href">Г</a></li>
@@ -42,7 +42,9 @@
 					</h2>
 
 					<div class="icon-arrow smooth">
-				     	<a href="#" class="icon-arrow__href animate-up-and-down"><i class="icon-down-open-big">&#xe802;</i></a>
+				     	<a href="#" class="icon-arrow__href animate-up-and-down">
+				     		<i class="icon-down-open-big">&#xe802;</i>
+				     	</a>
 				    </div>
 				</div>
 
@@ -85,8 +87,35 @@
 
 
 
+
+
+
+
+	<div id="preloader">
+		<div id="status">
+			<div class="spinner"></div>
+		</div>
+	</div>
+
 	<script>
   		$.backstretch("images/bg1.jpg");
+
+
+
+  		
+
+  		window.onload = function () {
+  			var bodyWraper = document.getElementsByClassName('body-wraper')[0];
+  			var preloader  = document.getElementById('preloader');
+
+  			preloader.style.opacity = 0;
+
+  			setTimeout(function () {
+  				preloader.style.display = "none";
+  				bodyWraper.style.display = "block";
+  			}, 300);
+  		}
+
 	</script>
 </body>
 </html>
