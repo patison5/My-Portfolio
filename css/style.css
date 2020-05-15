@@ -361,6 +361,7 @@ p {
   background: rgba(30,30,31,0.85);
   padding: 50px;
   margin-bottom: 20px;
+  border-radius: 4px;
 }
 
 .section-title {
@@ -387,6 +388,7 @@ p {
 .box {
   padding: 35px;
   background: rgba(30,30,31,0.85);
+  border-radius: 4px;
 }
 
 .post__wrap {
@@ -404,8 +406,51 @@ p {
   padding: 0 20px;
 }
 
+.post-image__wrap {
+  position: relative;
+}
+
 .post__image-main {
   width: 100%;
+}
+
+.post-image__wrap a {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-overlay {
+  top: 0;
+  opacity: 0;
+  height: 100%;
+  position: absolute;
+  text-decoration: none;
+  width: 100%;
+  z-index: 2;
+  padding: 50px;
+  background: #222;
+  background: rgba(30,30,31,0.85);
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.post-image__wrap a:hover .image-overlay {
+  opacity: 1;
+}
+
+.image-overlay .info {
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    margin-top: -12px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #e0e0e0;
+    text-transform: uppercase;
 }
 
 .post-info {
@@ -472,7 +517,8 @@ p {
 
 
 /* single post */
-#single-post {
+#single-post,
+#blog {
   margin-top: 50px;
   display: block;
   overflow: hidden;
@@ -499,7 +545,28 @@ p {
 
 
 
+/*блок тегов в сингл посте*/
+.post-tags {
+  margin-bottom: 20px;
+}
 
+.post-tags .tag-list li {
+  display: inline;
+}
+
+.post-tags .tag-list li a {
+  color: #787878;
+  padding: 0 !important;
+}
+
+.post-tags .tag-list li a:hover {
+  color: #9cbc68;
+}
+
+.post-tags .tag-list a:before {
+    content: "#";
+    display: inline-block;
+}
 
 
 
